@@ -89,16 +89,16 @@
 RGB
 16进制颜色值">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS笔记">
+<meta property="og:title" content="CSS总结">
 <meta property="og:url" content="http://losiyo.github.io/2016/08/12/CSS笔记/index.html">
 <meta property="og:site_name" content="Cuirong">
 <meta property="og:description" content="CSS Colors
 140个标准颜色单词（大小写不敏感）
 RGB
 16进制颜色值">
-<meta property="og:updated_time" content="2016-08-12T10:06:42.000Z">
+<meta property="og:updated_time" content="2016-08-13T07:41:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS笔记">
+<meta name="twitter:title" content="CSS总结">
 <meta name="twitter:description" content="CSS Colors
 140个标准颜色单词（大小写不敏感）
 RGB
@@ -125,7 +125,7 @@ RGB
 
   <link rel="canonical" href="http://losiyo.github.io/2016/08/12/CSS笔记/"/>
 
-  <title> CSS笔记 | Cuirong </title>
+  <title> CSS总结 | Cuirong </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -255,7 +255,7 @@ RGB
             
             
               
-                CSS笔记
+                CSS总结
               
             
           </h1>
@@ -456,8 +456,50 @@ RGB
 <li>~</li>
 </ul>
 <hr>
-<h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><hr>
-<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><hr>
+<h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><ul>
+<li>:active</li>
+<li>:link</li>
+<li>:hover</li>
+<li>:visited</li>
+<li>:checked   ——匹配每个选中的输入元素（仅适用于单选按钮和复选框）</li>
+<li>disabled  ——匹配每个禁用的元素</li>
+<li>:empty   ——选择每个没有任何子级的元素（包括文本节点）</li>
+<li>:enabled   ——选择所有启动的表单元素</li>
+<li>:first-child ——选择元素的第一个子元素</li>
+<li>:first-of-type ——匹配元素其父级是特定类型的第一个子元素</li>
+<li>:focus ——选择具有焦点的元素</li>
+<li>:in-range ——用于标签的值在指定区间时设置指定样式</li>
+<li>:invalid ——在表单元素的值是非法的时候设置指定样式</li>
+<li>:lang(language) ——为不同的语言定义特殊的规则</li>
+<li>:last-child ——匹配父元素中最后一个元素</li>
+<li>:last-of -type ——匹配父元素其父级是特定类型的最后一个子元素</li>
+<li>:not(selector) ——匹配每个元素它不是指定的元素／选择器</li>
+<li>:nth-child(n) ——匹配父元素中第N个子元素</li>
+<li>:nth-last-child(n) </li>
+<li>:nth-last-of-type(n) ——匹配同类型中的倒数第N个同级兄弟元素</li>
+<li>:nth-of-type(n) ——匹配同类型中第N个同级兄弟元素</li>
+<li>:only-child ——匹配属于父元素中的唯一子元素的元素</li>
+<li>:optional ——表单元素是可选时设置指定样式，表单元素中如果没有特别制定设置required属性，即为optional</li>
+<li>:out-of-range ——用于标签的值在指定区间之外的值的元素</li>
+<li>:read-only ——选取设置了”readonly”属性的元素</li>
+<li>:read-write ——匹配可读及可写的元素</li>
+<li>:required ——有required属性置顶的元素属性</li>
+<li>:root ——匹配文档中的跟元素，HTML中的根元素始终时HTML</li>
+<li>:target ——当前活动的target元素，＃锚的名称是在一个文件中链接到某个元素的URL－元素被链接到目标元素</li>
+<li>:valid ——在表单元素的值需要根据指定条件验证时设置指定样式</li>
+</ul>
+<hr>
+<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><ul>
+<li>::after ——向选定的元素之后插入内容，使用content属性来指定要插入的内容</li>
+<li>::before ——与after相反</li>
+<li>::first-letter ——指定元素的第一个字母的样式，IE5.5～8 和 Opera4～6只支持旧的标准语法:first-letter</li>
+<li>::first-line ——指定选择器第一行的样式</li>
+<li>::selection ——匹配被用户选中的内容</li>
+</ul>
+<hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="http://w3schools.bootcss.com/css/" target="_blank" rel="external">http://w3schools.bootcss.com/css/</a></li>
+</ul>
 
       
     </div>
@@ -496,6 +538,10 @@ RGB
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/16/CSS3总结/" rel="prev" title="CSS3总结">
+                CSS3总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -563,7 +609,7 @@ RGB
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -580,7 +626,7 @@ RGB
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -629,7 +675,7 @@ RGB
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Colors"><span class="nav-number">1.</span> <span class="nav-text">CSS Colors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Background"><span class="nav-number">2.</span> <span class="nav-text">CSS Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Borders"><span class="nav-number">3.</span> <span class="nav-text">CSS Borders</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Margins"><span class="nav-number">4.</span> <span class="nav-text">CSS Margins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Padding"><span class="nav-number">5.</span> <span class="nav-text">CSS Padding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Height-Width"><span class="nav-number">6.</span> <span class="nav-text">CSS Height  Width</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Text"><span class="nav-number">7.</span> <span class="nav-text">CSS Text</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Fonts"><span class="nav-number">8.</span> <span class="nav-text">CSS Fonts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Links"><span class="nav-number">9.</span> <span class="nav-text">CSS Links</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Lists"><span class="nav-number">10.</span> <span class="nav-text">CSS Lists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Tables"><span class="nav-number">11.</span> <span class="nav-text">CSS Tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Box-Model"><span class="nav-number">12.</span> <span class="nav-text">Box Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Outline"><span class="nav-number">13.</span> <span class="nav-text">CSS Outline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Display"><span class="nav-number">14.</span> <span class="nav-text">CSS Display</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Position"><span class="nav-number">15.</span> <span class="nav-text">Position</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Float"><span class="nav-number">16.</span> <span class="nav-text">CSS Float</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inline-block"><span class="nav-number">17.</span> <span class="nav-text">Inline-block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Align"><span class="nav-number">18.</span> <span class="nav-text">CSS Align</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Combinators"><span class="nav-number">19.</span> <span class="nav-text">CSS Combinators</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类"><span class="nav-number">20.</span> <span class="nav-text">伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪元素"><span class="nav-number">21.</span> <span class="nav-text">伪元素</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Colors"><span class="nav-number">1.</span> <span class="nav-text">CSS Colors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Background"><span class="nav-number">2.</span> <span class="nav-text">CSS Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Borders"><span class="nav-number">3.</span> <span class="nav-text">CSS Borders</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Margins"><span class="nav-number">4.</span> <span class="nav-text">CSS Margins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Padding"><span class="nav-number">5.</span> <span class="nav-text">CSS Padding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Height-Width"><span class="nav-number">6.</span> <span class="nav-text">CSS Height  Width</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Text"><span class="nav-number">7.</span> <span class="nav-text">CSS Text</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Fonts"><span class="nav-number">8.</span> <span class="nav-text">CSS Fonts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Links"><span class="nav-number">9.</span> <span class="nav-text">CSS Links</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Lists"><span class="nav-number">10.</span> <span class="nav-text">CSS Lists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Tables"><span class="nav-number">11.</span> <span class="nav-text">CSS Tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Box-Model"><span class="nav-number">12.</span> <span class="nav-text">Box Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Outline"><span class="nav-number">13.</span> <span class="nav-text">CSS Outline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Display"><span class="nav-number">14.</span> <span class="nav-text">CSS Display</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Position"><span class="nav-number">15.</span> <span class="nav-text">Position</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Float"><span class="nav-number">16.</span> <span class="nav-text">CSS Float</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inline-block"><span class="nav-number">17.</span> <span class="nav-text">Inline-block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Align"><span class="nav-number">18.</span> <span class="nav-text">CSS Align</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Combinators"><span class="nav-number">19.</span> <span class="nav-text">CSS Combinators</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类"><span class="nav-number">20.</span> <span class="nav-text">伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪元素"><span class="nav-number">21.</span> <span class="nav-text">伪元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">22.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
           </div>
         </section>

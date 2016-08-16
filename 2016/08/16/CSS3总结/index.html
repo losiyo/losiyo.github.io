@@ -1,0 +1,751 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS3," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="CSS3模块
+选择器
+盒模型
+背景和边框
+图像值和替换内容
+文字特效
+2D/3D转换
+动画
+多列布局
+用户界面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3总结">
+<meta property="og:url" content="http://losiyo.github.io/2016/08/16/CSS3总结/index.html">
+<meta property="og:site_name" content="Cuirong">
+<meta property="og:description" content="CSS3模块
+选择器
+盒模型
+背景和边框
+图像值和替换内容
+文字特效
+2D/3D转换
+动画
+多列布局
+用户界面">
+<meta property="og:updated_time" content="2016-08-16T08:13:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3总结">
+<meta name="twitter:description" content="CSS3模块
+选择器
+盒模型
+背景和边框
+图像值和替换内容
+文字特效
+2D/3D转换
+动画
+多列布局
+用户界面">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://losiyo.github.io/2016/08/16/CSS3总结/"/>
+
+  <title> CSS3总结 | Cuirong </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Cuirong</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">一蹦十厘米</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS3总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-16T16:08:05+08:00" content="2016-08-16">
+              2016-08-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="CSS3模块"><a href="#CSS3模块" class="headerlink" title="CSS3模块"></a>CSS3模块</h3><ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>图像值和替换内容</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<a id="more"></a>
+<h2 id="Round-Corners-圆角"><a href="#Round-Corners-圆角" class="headerlink" title="Round Corners 圆角"></a>Round Corners 圆角</h2><ul>
+<li>border-radius</li>
+<li>border-top-left-radius</li>
+</ul>
+<h2 id="Border-Images-IE-11"><a href="#Border-Images-IE-11" class="headerlink" title="Border Images(IE 11+)"></a>Border Images(IE 11+)</h2><ul>
+<li>border-image</li>
+<li>-o-border-image</li>
+<li>-webkit-border-image</li>
+<li>border-image-source</li>
+<li>border-image-slice ——图片边框向内偏移</li>
+<li>border-image-width ——图片边框的宽度</li>
+<li>border-image-outset ——边框图像区域超出边框的量</li>
+<li>border-image-repeat ——平铺(repeated),拉伸(stretched),铺满(rounded)</li>
+</ul>
+<h2 id="Backgrounds"><a href="#Backgrounds" class="headerlink" title="Backgrounds"></a>Backgrounds</h2><ul>
+<li>background-clip ——规定背景的绘制区域，border-box, padding-box, content-box</li>
+<li>background-image</li>
+<li>background-origin ——规定背景图片的定位区域, padding-box, border-box, content-box</li>
+<li>background-size ——auto, length, %, cover, contain, initial, inherit</li>
+</ul>
+<h2 id="Colors"><a href="#Colors" class="headerlink" title="Colors"></a>Colors</h2><ul>
+<li>RGBA, HSL, HSLA, opacity</li>
+</ul>
+<h2 id="Gradient-渐变-IE-10-o-webkit-moz"><a href="#Gradient-渐变-IE-10-o-webkit-moz" class="headerlink" title="Gradient 渐变(IE 10+, -o-, -webkit-, -moz-)"></a>Gradient 渐变(IE 10+, -o-, -webkit-, -moz-)</h2><ul>
+<li>linear-gradient</li>
+<li>radial-gradient</li>
+<li>repeat-linear-gradient</li>
+<li>repeat-radial-gradient<br>background: linear-gradient(direction, color-stop1, color-stop2,…)<br>top-to-bottom(default)<br>background: linear-gradient(angle, color-stop1, color-stop2,..)<br>background: radial-gradient(shape, color…)<br>ellipse<br>circle<br>closest-side<br>farthest-side<br>closest-side<br>farthest-side</li>
+</ul>
+<h2 id="阴影效果"><a href="#阴影效果" class="headerlink" title="阴影效果"></a>阴影效果</h2><ul>
+<li>text-shadow ——IE 10+</li>
+<li>box-shadow<br>参数：水平偏移，垂直偏移，模糊，颜色</li>
+</ul>
+<h2 id="Text"><a href="#Text" class="headerlink" title="Text"></a>Text</h2><ul>
+<li>text-overflow<br>‘’’<br>text-overflow: clip;<br>‘’’<br>clip:  修剪<br>ellipsis: 用省略号代替修剪文本<br>string: 用给定字符串代替修剪文本　</li>
+<li>word-wrap ——允许长单词或URL地址转换到下一行<br>normal: 只允许在断点字换行<br>break-word: 在长单词或URL地址内部进行换行</li>
+<li>word-break<br>normal<br>break-all: 允许在单词内换行<br>keep-all: 只能在半角空格或连字符处换行</li>
+<li>text-align-last</li>
+<li>text-emphasis</li>
+<li>text-justify</li>
+</ul>
+<h2 id="Web-Fonts"><a href="#Web-Fonts" class="headerlink" title="Web Fonts"></a>Web Fonts</h2><p>@font-face{<br>font-family:<br>src:<br>font-weight:<br>font-style:<br>}</p>
+<h2 id="2D变换"><a href="#2D变换" class="headerlink" title="2D变换"></a>2D变换</h2><ul>
+<li>transform ——向元素应用2D或3D变换</li>
+<li>transform-origin ——改变被变幻元素的位置<br>translate(50px, 100px)——平移<br>rotate(20 deg)——旋转<br>scale(2,3)——缩放<br>skew(30deg, 20deg)——绕X轴旋转30度，绕Y轴旋转20度<br>skewX(30deg)<br>skewY(20deg)<br>matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</li>
+</ul>
+<h2 id="3D变换-（IE-10-）"><a href="#3D变换-（IE-10-）" class="headerlink" title="3D变换 （IE 10+）"></a>3D变换 （IE 10+）</h2><ul>
+<li>transform<br>matrix3d(…)<br>translateX()<br>translateY()<br>translateZ()<br>translate3d(x,y,z)<br>scaleX()<br>scaleY()<br>scaleZ()<br>scale3d(x,y,z)<br>rotate3d(x,y,z,angle)<br>rotateX()<br>rotateY()<br>ratateZ()<br>perspective(n)</li>
+<li>transform-origin</li>
+<li>transform-style——规定被前套元素如何在3D空间中显示<br>flat: 子元素将不保留其3D位置<br>preserve-3d: 子元素将保留其3D位置</li>
+<li>perspectiv——定义3D元素距离视图的距离，以像素记，其子元素会活的透视效果，而不是元素本身</li>
+<li>perspective-origin——定义3D元素所基于的X轴和Y轴</li>
+<li>backface-visibility——当元素不面向屏幕时是否可见<br>hidden<br>visible</li>
+</ul>
+<h2 id="Transition-过渡-IE-10"><a href="#Transition-过渡-IE-10" class="headerlink" title="Transition 过渡(IE 10+)"></a>Transition 过渡(IE 10+)</h2><ul>
+<li>transition</li>
+<li>transition-property</li>
+<li>transition-duration</li>
+<li>transition-timing-function<br>linear<br>ease<br>ease-in<br>ease-out<br>ease-in-out<br>cubic-bezier(n,n,n)</li>
+<li>transition-delay</li>
+</ul>
+<h2 id="Animation-IE-10"><a href="#Animation-IE-10" class="headerlink" title="Animation (IE 10+)"></a>Animation (IE 10+)</h2><p>@keyframes</p>
+<ul>
+<li>animation</li>
+<li>animation-name</li>
+<li>animation-duration</li>
+<li>animation-timing-function</li>
+<li>animation-delay</li>
+<li>animation-iteration-count——动画被播放的次数，n, infinite</li>
+<li>animation-direction——下一周期是否逆向播放？normal; reverse; alternate; alternate-reverse; </li>
+<li>animation-play-state——运行转台pause; running</li>
+<li>animation-fill-mode——规定动画在之前或之后，其动画效果是否可见？none; forwards: 动画完成后，保持最后一个属性值; backwards: 动画之前，应用属性开始值; both</li>
+</ul>
+<h2 id="Multiple-Columns-多列布局-IE-10"><a href="#Multiple-Columns-多列布局-IE-10" class="headerlink" title="Multiple Columns 多列布局 (IE 10+)"></a>Multiple Columns 多列布局 (IE 10+)</h2><ul>
+<li>column-count</li>
+<li>column-gap</li>
+<li>column-rule</li>
+<li>column-rule-color</li>
+<li>column-rule-style</li>
+<li>column-rule-width</li>
+<li>columns</li>
+<li>column-fill</li>
+<li>column-span</li>
+<li>column-width</li>
+</ul>
+<h2 id="User-Interface-用户界面-IE不支持"><a href="#User-Interface-用户界面-IE不支持" class="headerlink" title="User Interface 用户界面 (IE不支持)"></a>User Interface 用户界面 (IE不支持)</h2><ul>
+<li>resize——none; both; horizontal; vertical</li>
+<li>outline-offset——对轮廓偏移的距离<br>outline: 2px solid red;<br>outline-offset: 15px;</li>
+</ul>
+<h2 id="Box-Sizing"><a href="#Box-Sizing" class="headerlink" title="Box Sizing"></a>Box Sizing</h2><p>content-box<br>border-box</p>
+<h2 id="Flexbox-IE-11"><a href="#Flexbox-IE-11" class="headerlink" title="Flexbox(IE 11+)"></a>Flexbox(IE 11+)</h2><ul>
+<li>display </li>
+<li>flex-direction</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li>flex-wrap</li>
+<li>align-content</li>
+<li>flex-flow</li>
+<li>order</li>
+<li>align-self</li>
+<li>flex</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS3/" rel="tag">#CSS3</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/12/CSS笔记/" rel="next" title="CSS总结">
+                <i class="fa fa-chevron-left"></i> CSS总结
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Cuirong" />
+          <p class="site-author-name" itemprop="name">Cuirong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/losiyo" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3202873101" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3模块"><span class="nav-number">1.</span> <span class="nav-text">CSS3模块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Round-Corners-圆角"><span class="nav-number"></span> <span class="nav-text">Round Corners 圆角</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Border-Images-IE-11"><span class="nav-number"></span> <span class="nav-text">Border Images(IE 11+)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Backgrounds"><span class="nav-number"></span> <span class="nav-text">Backgrounds</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Colors"><span class="nav-number"></span> <span class="nav-text">Colors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-渐变-IE-10-o-webkit-moz"><span class="nav-number"></span> <span class="nav-text">Gradient 渐变(IE 10+, -o-, -webkit-, -moz-)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阴影效果"><span class="nav-number"></span> <span class="nav-text">阴影效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Text"><span class="nav-number"></span> <span class="nav-text">Text</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Fonts"><span class="nav-number"></span> <span class="nav-text">Web Fonts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2D变换"><span class="nav-number"></span> <span class="nav-text">2D变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3D变换-（IE-10-）"><span class="nav-number"></span> <span class="nav-text">3D变换 （IE 10+）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transition-过渡-IE-10"><span class="nav-number"></span> <span class="nav-text">Transition 过渡(IE 10+)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Animation-IE-10"><span class="nav-number"></span> <span class="nav-text">Animation (IE 10+)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiple-Columns-多列布局-IE-10"><span class="nav-number"></span> <span class="nav-text">Multiple Columns 多列布局 (IE 10+)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#User-Interface-用户界面-IE不支持"><span class="nav-number"></span> <span class="nav-text">User Interface 用户界面 (IE不支持)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Box-Sizing"><span class="nav-number"></span> <span class="nav-text">Box Sizing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flexbox-IE-11"><span class="nav-number"></span> <span class="nav-text">Flexbox(IE 11+)</span></a></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cuirong</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
