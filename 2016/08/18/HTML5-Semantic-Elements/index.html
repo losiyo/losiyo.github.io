@@ -1,0 +1,687 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="HTML5," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="&amp;lt; section &amp;gt;
+&amp;lt;section&amp;gt;标签定义文档中的节。比如章节，页眉，页脚或文档中的其余部分1234&amp;lt;section&amp;gt;  &amp;lt;h1&amp;gt;EEF&amp;lt;/h1&amp;gt;  &amp;lt;p&amp;gt;The World Wide Fund for Nature (WWF) is an international organization working on i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5语义化元素">
+<meta property="og:url" content="http://losiyo.github.io/2016/08/18/HTML5-Semantic-Elements/index.html">
+<meta property="og:site_name" content="Cuirong">
+<meta property="og:description" content="&amp;lt; section &amp;gt;
+&amp;lt;section&amp;gt;标签定义文档中的节。比如章节，页眉，页脚或文档中的其余部分1234&amp;lt;section&amp;gt;  &amp;lt;h1&amp;gt;EEF&amp;lt;/h1&amp;gt;  &amp;lt;p&amp;gt;The World Wide Fund for Nature (WWF) is an international organization working on i">
+<meta property="og:updated_time" content="2016-08-18T08:57:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5语义化元素">
+<meta name="twitter:description" content="&amp;lt; section &amp;gt;
+&amp;lt;section&amp;gt;标签定义文档中的节。比如章节，页眉，页脚或文档中的其余部分1234&amp;lt;section&amp;gt;  &amp;lt;h1&amp;gt;EEF&amp;lt;/h1&amp;gt;  &amp;lt;p&amp;gt;The World Wide Fund for Nature (WWF) is an international organization working on i">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://losiyo.github.io/2016/08/18/HTML5-Semantic-Elements/"/>
+
+  <title> HTML5语义化元素 | Cuirong </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Cuirong</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">一蹦十厘米</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HTML5语义化元素
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-18T16:27:36+08:00" content="2016-08-18">
+              2016-08-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/HTML5/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML5</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="lt-section-gt"><a href="#lt-section-gt" class="headerlink" title="&lt; section &gt;"></a>&lt; section &gt;</h3><ul>
+<li>&lt;section&gt;标签定义文档中的节。比如章节，页眉，页脚或文档中的其余部分<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;section&gt;</div><div class="line">  &lt;h1&gt;EEF&lt;/h1&gt;</div><div class="line">  &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;</div><div class="line">&lt;/section&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-article-gt"><a href="#lt-article-gt" class="headerlink" title="&lt; article &gt;"></a>&lt; article &gt;</h3><ul>
+<li>定义独立的，完整的内容</li>
+<li>&lt;article&gt;标签的内容独立于文档的其余部分<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;article&gt;</div><div class="line">  &lt;h1&gt;Google Chrome&lt;/h1&gt;</div><div class="line">  &lt;p&gt;Google Chrome is a free, open-source web brower development by Google released in 2008&lt;/p&gt;</div><div class="line">&lt;/article&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<h3 id="lt-header-gt"><a href="#lt-header-gt" class="headerlink" title="&lt; header &gt;"></a>&lt; header &gt;</h3><ul>
+<li>网页或”section”的页眉</li>
+<li>没有个数限制<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;article&gt;</div><div class="line">  &lt;header&gt;</div><div class="line">    &lt;h1&gt;Most important heading here&lt;/h1&gt;</div><div class="line">    &lt;h3&gt;Less important heading here&lt;/h3&gt;</div><div class="line">    &lt;p&gt;Some additional information here&lt;/p&gt;</div><div class="line">  &lt;/header&gt;</div><div class="line">  &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt;</div><div class="line">&lt;/article&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-footer-gt"><a href="#lt-footer-gt" class="headerlink" title="&lt; footer &gt;"></a>&lt; footer &gt;</h3><ul>
+<li>定义文档或section的页脚</li>
+<li>应该包含它的包含元素</li>
+<li>一个页脚通常包含文档的作者，著作权信息，联系信息，网站地图，回到顶部链接，相关文件</li>
+<li>一个文档可以包含多个footer元素<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;footer&gt;</div><div class="line">  &lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt;</div><div class="line">  &lt;p&gt;Contact information: &lt;a href=&quot;mailto:someone@example.com&quot;&gt;</div><div class="line">  someone@example.com&lt;/a&gt;.&lt;/p&gt;</div><div class="line">&lt;/footer&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-nav-gt"><a href="#lt-nav-gt" class="headerlink" title="&lt; nav &gt;"></a>&lt; nav &gt;</h3><ul>
+<li>定义导航链接的部分</li>
+<li>不是所有的链接都要包含在nav标签中<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;nav&gt;</div><div class="line">  &lt;a href=&quot;/html/&quot;&gt;HTML&lt;/a&gt; |</div><div class="line">  &lt;a href=&quot;/css/&quot;&gt;CSS&lt;/a&gt; |</div><div class="line">  &lt;a href=&quot;/js/&quot;&gt;JavaScript&lt;/a&gt; |</div><div class="line">  &lt;a href=&quot;/jquery/&quot;&gt;jQuery&lt;/a&gt;</div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-aside-gt"><a href="#lt-aside-gt" class="headerlink" title="&lt; aside &gt;"></a>&lt; aside &gt;</h3><ul>
+<li>定义页面区域内容之外的内容</li>
+<li>aside标签的内容应与主域的内容相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;My family and I visited The Epcot center this summer.&lt;/p&gt;</div><div class="line">&lt;aside&gt;</div><div class="line">  &lt;h4&gt;Epcot Center&lt;/h4&gt;</div><div class="line">  &lt;p&gt;The Epcot Center is a theme park in Disney World, Florida.&lt;/p&gt;</div><div class="line">&lt;/aside&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-main-gt"><a href="#lt-main-gt" class="headerlink" title="&lt; main &gt;"></a>&lt; main &gt;</h3><ul>
+<li>IE 11- 不支持</li>
+<li>呈现文档&lt;body&gt;或应用的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题，应用的主要功能部分组成。这部分内容在文档中应该是独一无二的，不包含在任何一系列文档中重复的内容，比如侧边栏，导航栏链接，版权信息，网站logo，搜索框。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;main&gt;</div><div class="line">  &lt;h1&gt;Apples&lt;/h1&gt;</div><div class="line">  &lt;p&gt;The apple is the pomaceous fruit of the apple tree.&lt;/p&gt;  </div><div class="line">  &lt;article&gt;</div><div class="line">    &lt;h2&gt;Red Delicious&lt;/h2&gt;</div><div class="line">    &lt;p&gt;These bright red apples are the most common found in many</div><div class="line">    supermarkets.&lt;/p&gt;</div><div class="line">    &lt;p&gt;... &lt;/p&gt;</div><div class="line">    &lt;p&gt;... &lt;/p&gt;</div><div class="line">  &lt;/article&gt;</div><div class="line">  &lt;article&gt;</div><div class="line">    &lt;h2&gt;Granny Smith&lt;/h2&gt;</div><div class="line">    &lt;p&gt;These juicy, green apples make a great filling for</div><div class="line">    apple pies.&lt;/p&gt;</div><div class="line">    &lt;p&gt;... &lt;/p&gt;</div><div class="line">    &lt;p&gt;... &lt;/p&gt;</div><div class="line">  &lt;/article&gt;</div><div class="line">&lt;/main&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-figure-gt-lt-figcaption-gt"><a href="#lt-figure-gt-lt-figcaption-gt" class="headerlink" title="&lt; figure &gt; &lt; figcaption &gt;"></a>&lt; figure &gt; &lt; figcaption &gt;</h3><ul>
+<li>&lt;figure&gt;标签规定独立的流内容（图像，图表，照片，代码等等）</li>
+<li>&lt;figure&gt;元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响</li>
+<li>&lt;figcaption&gt;标签定义&lt;figure&gt;元素的标题</li>
+<li>&lt;figcaption&gt;元素应该被置于”figure”元素的第一个或最后一个子元素的位置<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;figure&gt;</div><div class="line">  &lt;img src=&quot;img_pulpit.jpg&quot; alt=&quot;The Pulpit Rock&quot; width=&quot;304&quot; height=&quot;228&quot;&gt;</div><div class="line">  &lt;figcaption&gt;Fig1. - A view of the pulpit rock in Norway.&lt;/figcaption&gt;</div><div class="line">&lt;/figure&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-details-gt-lt-summary-gt"><a href="#lt-details-gt-lt-summary-gt" class="headerlink" title="&lt; details &gt; &lt; summary &gt;"></a>&lt; details &gt; &lt; summary &gt;</h3><ul>
+<li>IE 和 Edge, safiri 5- 不支持</li>
+<li>允许用户创建一个可展开折叠的元件，让一段文字或标题包含一些隐藏的信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;details&gt;</div><div class="line">  &lt;summary&gt;Copyright 1999-2014.&lt;/summary&gt;</div><div class="line">  &lt;p&gt; - by Refsnes Data. All Rights Reserved.&lt;/p&gt;</div><div class="line">  &lt;p&gt;All content and graphics on this web site are the property of the company Refsnes Data.&lt;/p&gt;</div><div class="line">&lt;/details&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-mark-gt"><a href="#lt-mark-gt" class="headerlink" title="&lt; mark &gt;"></a>&lt; mark &gt;</h3><ul>
+<li>在一个引用或者块级元素中，突出显示的文本通常是外部引用的文本，或者</li>
+<li>突出显示的文本通常与用户当前活动具有关联性，比如搜索的结果<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today&lt;/p&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="lt-time-gt"><a href="#lt-time-gt" class="headerlink" title="&lt; time &gt;"></a>&lt; time &gt;</h3><ul>
+<li>表示24小时制时间或公立日期，若表示时间则也可包含时间和时区<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;We open at &lt;time&gt;10:00&lt;/time&gt; every morning.&lt;/p&gt;</div><div class="line">&lt;p&gt;I have a date on &lt;time datetime=&quot;2008-02-14 20:00&quot;&gt;Valentines day&lt;/time&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h3><ul>
+<li>现代浏览器均支持HTML5</li>
+<li>所有浏览器都将不认识的元素当作行内元素处理</li>
+<li>你甚至可以教会老式浏览器处理不认识的HTML元素</li>
+<li><p>HTML5定义了新的语义元素，它们都是块级元素，为了在旧的浏览器正确显示，我们将它们的CSS样式的”display”属性设置为”block”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">header, section, footer, aside, nav, main, article, figure &#123;</div><div class="line">    display: block; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>IE 8 及更早版本不支持为不认识的元素设置样式，我么可以使用HTML5 Shiv Javascript脚本来解决IE的兼容问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lt IE 9]&gt;</div><div class="line">  &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>以上代码在浏览器小于IE9版本时会加载html5shiv.js文件. 你必须将其放置于<head> 元素中，因为 IE浏览器需要在头部加载后渲染这些HTML5的新元素</head></p>
+</li>
+</ul>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><a href="http://w3schools.bootcss.com/html/html5_browsers.html" target="_blank" rel="external">http://w3schools.bootcss.com/html/html5_browsers.html</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag">#HTML5</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/17/RemovedEleInH5/" rel="next" title="Elements Removed in HTML5">
+                <i class="fa fa-chevron-left"></i> Elements Removed in HTML5
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Cuirong" />
+          <p class="site-author-name" itemprop="name">Cuirong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/losiyo" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3202873101" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-section-gt"><span class="nav-number">1.</span> <span class="nav-text">< section ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-article-gt"><span class="nav-number">2.</span> <span class="nav-text">< article ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-header-gt"><span class="nav-number">3.</span> <span class="nav-text">< header ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-footer-gt"><span class="nav-number">4.</span> <span class="nav-text">< footer ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-nav-gt"><span class="nav-number">5.</span> <span class="nav-text">< nav ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-aside-gt"><span class="nav-number">6.</span> <span class="nav-text">< aside ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-main-gt"><span class="nav-number">7.</span> <span class="nav-text">< main ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-figure-gt-lt-figcaption-gt"><span class="nav-number">8.</span> <span class="nav-text">< figure > < figcaption ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-details-gt-lt-summary-gt"><span class="nav-number">9.</span> <span class="nav-text">< details > < summary ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-mark-gt"><span class="nav-number">10.</span> <span class="nav-text">< mark ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-time-gt"><span class="nav-number">11.</span> <span class="nav-text">< time ></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览器支持"><span class="nav-number">12.</span> <span class="nav-text">浏览器支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">13.</span> <span class="nav-text">References</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cuirong</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
